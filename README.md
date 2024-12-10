@@ -22,7 +22,7 @@ For details, including the license statements of the utilized ECMWF data sets, s
 We compare the following AI weather prediction models:
 - GraphCast [[paper](https://doi.org/10.1126/science.adi2336)] [[GitHub](https://github.com/google-deepmind/graphcast)]
 - PanguWeather [[paper](https://doi.org/10.1038/s41586-023-06185-3)] [[GitHub](https://github.com/198808xc/Pangu-Weather)]
-- FourCastNet [[paper](https://doi.org/10.48550/arXiv.2202.11214)] [[GitHub]([https://github.com/NVlabs/FourCastNet)]
+- FourCastNet [[paper](https://doi.org/10.48550/arXiv.2202.11214)] [[GitHub](https://github.com/NVlabs/FourCastNet)]
 
 For GraphCast, we use the version released on GitHub, not to be confused with  'GraphCast_small' and 'GraphCast_operational'. For PanguWeather we used a combination of the authors' 6h and 24h models, following the "hierarchical temporal aggregation strategy" they developed.
 
