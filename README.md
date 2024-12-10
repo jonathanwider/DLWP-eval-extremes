@@ -1,4 +1,4 @@
-# AIWP-eval-extremes
+# DLWP-eval-extremes
 The repository documents code for _"Validating Deep-Learning Weather Forecast Models on Recent High-Impact Extreme Events"_ by  Olivier C. Pasche, Jonathan Wider, Zhongwei Zhang, Jakob Zscheischler, and Sebastian Engelke [[link](https://doi.org/10.1175/AIES-D-24-0033.1)]. We focus on the analyses conducted for our case studies and don't provide details on how the AI models were run - we built on the code released by the respective modeling groups, see section "Prediction models".
 
 ## Caveats
