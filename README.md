@@ -11,7 +11,7 @@ This should enable recreating our environment through `conda env create -f <envi
 
 ## Data
 We release preprocessed ground truth and prediction data for the three case studies considered in the paper as a [zenodo dataset](). The dataset is created using several sources:
-- for the ground truth data sets, we use data released through WeatherBench 2 ([[paper](https://doi.org/10.1029/2023MS004019)] [[dataset documentation](https://weatherbench2.readthedocs.io/en/latest/data-guide.html)]) when possible. In particular, we use their ERA5 climatology in the Pacific Northwest heatwave case study.
+- for the ground truth data sets, we use data released through WeatherBench 2 [[paper](https://doi.org/10.1029/2023MS004019)] [[dataset documentation](https://weatherbench2.readthedocs.io/en/latest/data-guide.html)] when possible. In particular, we use their ERA5 climatology in the Pacific Northwest heatwave case study.
 - when the ground truth data is not available through WeatherBench 2, we download it from ECMWF.
 - We ran all ML forecasts ourselves, using ERA5 to initialize the models.
 - HRES forecasts were retrieved from the ECMWF operational archive and the TIGGE data retrieval portal.
