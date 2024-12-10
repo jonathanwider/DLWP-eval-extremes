@@ -5,7 +5,7 @@ The repository documents code for _"Validating Deep-Learning Weather Forecast Mo
 This preliminary version lacks the code and data to reproduce Figures 3 and A1 in the paper. We will create a complete and tagged version in the near future.
 
 ## Setup
-We provide two environment files: `eval_env.yml` is the file we used to create the environment, and `eval_log.yml` was made with `conda env export` to provide the exact version we used.
+We provide two environment files: `eval_env.yml` is the file we used to create the environment, and `eval_log.yml` was created with `conda env export` to provide the exact version numbers we used.
 
 This should enable recreating our environment through `conda env create -f <environment-name>.yml`.
 
