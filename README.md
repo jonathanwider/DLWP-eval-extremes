@@ -2,9 +2,6 @@
 The repository documents code for _"Validating Deep-Learning Weather Forecast Models on Recent High-Impact Extreme Events"_ by  Olivier C. Pasche, Jonathan Wider, Zhongwei Zhang, Jakob Zscheischler, and Sebastian Engelke [[link](https://doi.org/10.1175/AIES-D-24-0033.1)]. We focus on the analyses conducted for our case studies.
 Details about how to run the AI models are referred to the GitHub pages of the respective modeling groups; see [section "Prediction models"](#prediction-models).
 
-## Caveats
-This preliminary version lacks the code and data to reproduce Figures 3 and A1 in the paper. We will create a complete and tagged version as soon as possible.
-
 ## Setup
 We provide two environment files: `eval_env.yml` is the file we used to create the environment, and `eval_log.yml` was created with `conda env export` to provide the exact version numbers we used.
 
