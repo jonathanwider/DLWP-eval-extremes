@@ -8,13 +8,13 @@ We provide two environment files: `eval_env.yml` is the file we used to create t
 This should enable recreating our environment through `conda env create -f <environment-name>.yml`.
 
 ## Data
-We release preprocessed ground truth and prediction data for the three case studies considered in the paper as a [zenodo dataset](https://doi.org/10.5281/zenodo.14358211). The dataset is created using several sources:
+We release preprocessed ground truth and prediction data for the three case studies considered in the paper as a [zenodo dataset](https://doi.org/10.5281/zenodo.14358212). The dataset is created using several sources:
 - for the ground truth data sets, we use data released through WeatherBench 2 [[paper](https://doi.org/10.1029/2023MS004019)] [[dataset documentation](https://weatherbench2.readthedocs.io/en/latest/data-guide.html)] when possible. In particular, we use their ERA5 climatology in the Pacific Northwest heatwave case study.
 - when the ground truth data is not available through WeatherBench 2, we download it from ECMWF.
 - We ran all ML forecasting models ourselves, using ERA5 to initialize the models.
 - HRES forecasts were retrieved from the ECMWF operational archive and the TIGGE data retrieval portal.
 
-For details, including the license statements of the utilized ECMWF data sets, see the documentation of the [zenodo dataset](https://doi.org/10.5281/zenodo.14358211).
+For details, including the license statements of the utilized ECMWF data sets, see the documentation of the [zenodo dataset](https://doi.org/10.5281/zenodo.14358212).
 
 ## Prediction models
 We compare the following AI weather prediction models:
