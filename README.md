@@ -1,6 +1,6 @@
 # DLWP-eval-extremes
-The repository documents code for _"Validating Deep-Learning Weather Forecast Models on Recent High-Impact Extreme Events"_ by  Olivier C. Pasche, Jonathan Wider, Zhongwei Zhang, Jakob Zscheischler, and Sebastian Engelke [[link](https://doi.org/10.1175/AIES-D-24-0033.1)]. We focus on the analyses conducted for our case studies.
-Details about how to run the AI models are referred to the GitHub pages of the respective modeling groups; see [section "Prediction models"](#prediction-models).
+The repository documents the code for _"Validating Deep-Learning Weather Forecast Models on Recent High-Impact Extreme Events"_ by  Olivier C. Pasche, Jonathan Wider, Zhongwei Zhang, Jakob Zscheischler, and Sebastian Engelke (DOI: [10.1175/AIES-D-24-0033.1](https://doi.org/10.1175/AIES-D-24-0033.1)). We focus on the analyses conducted for our case studies.
+Details about how to run the AI models are referred to the GitHub pages of the respective modeling groups; see the ["Prediction models" section](#prediction-models).
 
 ## Setup
 We provide two environment files: `eval_env.yml` is the file we used to create the environment, and `eval_log.yml` was created with `conda env export` to provide the exact version numbers we used.
@@ -8,13 +8,15 @@ We provide two environment files: `eval_env.yml` is the file we used to create t
 This should enable recreating our environment through `conda env create -f <environment-name>.yml`.
 
 ## Data
-We release preprocessed ground truth and prediction data for the three case studies considered in the paper as a [zenodo dataset](https://doi.org/10.5281/zenodo.14358212). The dataset is created using several sources:
+We release preprocessed ground truth and prediction weather data for the three case studies considered in the paper as a [zenodo dataset](https://doi.org/10.5281/zenodo.14358212). The dataset is created using several sources:
 - for the ground truth data sets, we use data released through WeatherBench 2 [[paper](https://doi.org/10.1029/2023MS004019)] [[dataset documentation](https://weatherbench2.readthedocs.io/en/latest/data-guide.html)] when possible. In particular, we use their ERA5 climatology in the Pacific Northwest heatwave case study.
 - when the ground truth data is not available through WeatherBench 2, we download it from ECMWF.
-- We ran all ML forecasting models ourselves, using ERA5 to initialize the models.
+- We ran all ML weather forecasting models ourselves, using ERA5 to initialize the models.
 - HRES forecasts were retrieved from the ECMWF operational archive and the TIGGE data retrieval portal.
 
-For details, including the license statements of the utilized ECMWF data sets, see the documentation of the [zenodo dataset](https://doi.org/10.5281/zenodo.14358212).
+For details, including the license statements of the utilized ECMWF data sets, see the documentation of the [zenodo dataset](https://doi.org/10.5281/zenodo.14358212). 
+
+For reproducibility, the data is to be downloaded from zenodo and placed in a folder named 'data' at the root of this repository. The analysis code expects all respective data files to be available in `./data/`.
 
 ## Prediction models
 We compare the following AI weather prediction models:
